@@ -1,9 +1,10 @@
-# helloworld
+# astrbot_plugin_decision
 
-AstrBot 插件模板
+让bot帮你做决定！
 
-A template plugin for AstrBot plugin feature
+# 使用方法
 
-# 支持
-
-[帮助文档](https://astrbot.app)
+```
+/decision 吃饭 睡觉 写代码
+[bot]🤔 我建议: 睡觉！
+```
