@@ -1,7 +1,7 @@
 [project]
 name = "astrbot-plugin-decision"
-version = "0.1.0"
-description = "Add your description here"
+version = "1.0.2"
+description = "Let bot help you make decisions!"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
