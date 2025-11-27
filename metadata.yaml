@@ -1,6 +1,6 @@
 name: astrbot_plugin_decision 
 display_name: decision 
 desc: 让bot帮你做决定。 
-version: v1.0.2
+version: v1.1.0
 author: Butterblock233 
 repo: https://github.com/Butterblock233/astrbot_plugin_decision 
