@@ -22,28 +22,19 @@ class DecisionPlugin(Star):
         # 将消息分割成单词列表
         parts = full_message.split()
 
-        # # 第一个词是命令名，移除它只保留选项
-        # if parts and parts[0] in "decision" or self.aliases:
-        #       options = parts[1:]
-        # else:
-        #       options = parts
-
         command_name = parts[0]
         options = parts[1:]
 
-        # 验证是否有选项
         if not options:
             yield event.plain_result(
                 f"请提供至少一个选项，例如：/{command_name} 选项1 选项2 选项3"
             )
             return
 
-        # 随机选择一个选项
         choice = random.choice(options)
         user_name = event.get_sender_name()
         logger.info(f"{user_name} 使用 decision 命令，选项: {options}, 结果: {choice}")
 
-        # 返回结果
         yield event.plain_result(f"🤔 我建议: {choice}！")
 
     async def terminate(self):
