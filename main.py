@@ -19,7 +19,7 @@ class DecisionPlugin(Star):
         """让机器人帮你做决定。用法: /decision 选项1 选项2 选项3..."""
         full_message = event.message_str.strip()
 
-        # 将消息分割成单词列表
+        # split options to list
         parts = full_message.split()
 
         command_name = parts[0]
@@ -32,8 +32,6 @@ class DecisionPlugin(Star):
             return
 
         choice = random.choice(options)
-        user_name = event.get_sender_name()
-        logger.info(f"{user_name} 使用 decision 命令，选项: {options}, 结果: {choice}")
 
         yield event.plain_result(f"🤔 我建议: {choice}！")
 
