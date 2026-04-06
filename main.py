@@ -17,7 +17,7 @@ class DecisionPlugin(Star):
             "none_options",
             "请提供至少一个选项，例如：/{command_name} 选项1 选项2 选项3",
         )
-        self.user_at_space: bool = config.get("user_at_space", True)
+        self.user_at_space: bool = config.get("user_at_space", False)
 
     @filter.command("decision", alias={"决定", "建议"})
     async def decision(self, event: AstrMessageEvent):
