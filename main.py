@@ -58,7 +58,7 @@ class DecisionPlugin(Star):
             prefix = " " if (i > 0 and self.user_at_space) else ""
             chain.append(Comp.Plain(prefix + component.format(**format_kwargs)))
 
-            # 添加 @ 部分（除了最后一段）
+            # 添加 @ 部分
             if i < len(components) - 1:
                 chain.append(Comp.At(qq=event.get_sender_id()))
 
