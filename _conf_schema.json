@@ -13,7 +13,7 @@
     },
     "user_at_space": {
         "description": "是否在@用户后增加空格",
-        "hint": "控制上述模板中{uset_at}的行为。当开启时，实际消息如：\"@Butterblock233 我觉得可以吃饭\"，建议开启",
+        "hint": "控制上述模板中{uset_at}的行为。当开启时，实际消息如：\"@Butterblock233 我觉得可以：吃饭\"，建议开启",
         "type": "bool",
         "default": true
     }
