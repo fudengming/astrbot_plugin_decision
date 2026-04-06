@@ -3,7 +3,7 @@ import random
 from astrbot.api import AstrBotConfig
 from astrbot.api.event import AstrMessageEvent, filter
 from astrbot.api.star import Context, Star, register
-from astrbot.api.message_components import Comp
+import astrbot.api.message_components as Comp
 
 
 @register("Decision", "ButterBlock233", "让机器人帮你做决定", "1.1.0")
