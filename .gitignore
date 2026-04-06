@@ -208,3 +208,5 @@ __marimo__/
 
 .python-version
 pre-commit-config.yaml
+pyproject.toml
+uv.lock
