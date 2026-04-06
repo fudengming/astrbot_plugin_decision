@@ -1,0 +1,20 @@
+{
+    "choice_template": {
+        "description": "结果发送消息模板",
+        "hint": "控制选择结果发送时的消息样式，其中{choice}、{user_name}、{user_at}会被分别替换为结果、用户昵称、@用户"
+        "type": "string",
+        "default": "🤔 我建议: {choice}！"
+    },
+    "none_options": {
+        "description": "无可用选项消息模板",
+        "hint": "控制当用户未提供可用的选项时发送的消息样式，其中{command_name}、{user_name}、{user_at}会被分别替换为用户使用的指令名、用户昵称、@用户"
+        "type": "string",
+        "default": "请提供至少一个选项，例如：/{command_name} 选项1 选项2 选项3"
+    },
+    "user_at_space": {
+        "description": "是否在@用户后增加空格",
+        "hint": "控制上述模板中{uset_at}的行为。当开启时，实际消息如：\"@Himalian 我觉得可以吃饭\"，建议开启"
+        "type": "bool",
+        "default": true
+    }
+}
