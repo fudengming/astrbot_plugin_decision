@@ -205,10 +205,3 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
-
-# Configuration files not required by AstrBot Star(Plugin)
-#  The following configuration files are redundant for the AstrBot Star(Plugin) project structure and should not be uploaded to your AstrBot Star(Plugin) project
-.python-version
-pre-commit-config.yaml
-pyproject.toml
-uv.lock

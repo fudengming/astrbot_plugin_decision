@@ -6,7 +6,7 @@ from astrbot.api.star import Context, Star, register
 import astrbot.api.message_components as Comp
 
 
-@register("Decision", "ButterBlock233", "让机器人帮你做决定", "1.2.0")
+@register("Decision", "Himalian", "让机器人帮你做决定", "1.2.0")
 class DecisionPlugin(Star):
     def __init__(self, context: Context, config: AstrBotConfig):
         super().__init__(context)
